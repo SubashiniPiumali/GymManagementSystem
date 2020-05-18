@@ -106,7 +106,7 @@ class orderController extends Controller
 
 
     //********************* */
-        return $this->sendSMS();
+     
     return redirect()->back()->with('success','Order Create Succesfullyy');
      
 
@@ -156,7 +156,7 @@ class orderController extends Controller
                 Order::insert ($data2);
              
           }
-          return $this->sendSMS();
+        
           return redirect()->back()->with('success',' Order Create Succesfully');
      } 
    
